@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using RestSharp;
+using System.Threading.Tasks;
 
 namespace DickinsonBros.DurableRest.Abstractions
 {
