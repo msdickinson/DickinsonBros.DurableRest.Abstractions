@@ -5,7 +5,7 @@ namespace DickinsonBros.DurableRest.Abstractions
 {
     public interface IDurableRestService
     {
-        Task<IRestResponse> ExecuteAsync(IRestClient client, IRestRequest restRequest, int retrys);
-        Task<IRestResponse<T>> ExecuteAsync<T>(IRestClient client, IRestRequest restRequest, int retrys);
+        Task<IRestResponse> ExecuteAsync(IRestRequest restRequest, string baseURL, int retrys);
+        Task<IRestResponse<T>> ExecuteAsync<T>(IRestRequest restRequest, string baseURL, int retrys);
     }
 }
